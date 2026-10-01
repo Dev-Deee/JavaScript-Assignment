@@ -1,0 +1,106 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 450px;
+    background: white;
+    padding: 32px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+#page-banner {
+    margin-bottom: 24px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#task-list {
+    margin: 24px 0;
+}
+
+.task-list-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+li.completed .name {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.name {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.delete {
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+#add-task {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(0.9);
+}
+
+.empty-state {
+    display: none;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+}
+
+.empty-state.visible {
+    display: block;
+}
